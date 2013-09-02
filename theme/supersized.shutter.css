@@ -1,0 +1,20 @@
+/*
+
+	Supersized - Fullscreen Slideshow jQuery Plugin
+	Version : 3.2.7
+	Site	: www.buildinternet.com/project/supersized
+	
+	Theme 	: Shutter 1.2
+	Author	: Sam Dunn
+	Company : One Mighty Roar (www.onemightyroar.com)
+	License : MIT License / GPL License
+	
+*/
+
+	/* Controls Bar
+	----------------------------*/
+	#slidecaption { color:#fff; background-color: #000; position: fixed; bottom: 0; left 0; height: 3em; width: 50%;}
+	#slidecaption P { margin: 1.1em; 0 0 1em; font-size: 1em; }
+	
+
+				

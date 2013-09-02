@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>Outsider Art Fair 2013</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		
+		<meta http-equiv="cleartype" content="on">
+		
+		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	
+        <!-- Favicon.ico and Apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />		
+
+		<!-- StyleSheets -->
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">     
+              
+        <!-- Modernizr -->
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+                		
+    </head>
+    <body class="mainBody">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. 
+            <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+    <!-- BEGIN content here -->      	
+    <div id="hideContent">
+		
+		<div id="topBar">
+			<a href="index.htm"><img id="subLogo" src="img/sub_logo.png" alt="Outsider Art Fair" /></a>
+			
+			<!--	<a href="http://outsiderartfair.eventbrite.com/" target="external"><img id="buyTixSub" src="img/buy_tix.png" alt="But Tickets Now" /></a> -->
+		</div>
+		
+		<div id="subSlideShow">
+			<img src="img/TEMP_sub1.jpg" alt="GALLERY NAME" /> 
+    		<img src="img/TEMP_sub2.jpg" alt="GALLERY NAME" /> 
+    		<img src="img/TEMP_sub3.jpg" alt="GALLERY NAME" /> 
+		</div>
+		
+		<div id="subContent">
+			<div id="subNav">
+				<ul id="subNavList">
+					<li><a href="about.htm">About</a></li>
+					<!-- <li><a href="sponsors.htm">Sponsors</a></li> -->
+					<li><a href="press.htm">Press</a></li>
+					<li><a href="contact.htm" style="color: #BBB0A6;">Contact</a><br /><br /></li>
+					<li><a href="nyc.htm">New York</a></li>
+					<li><a href="paris.htm">Paris</a></li>	
+				</ul>
+			</div>
+		
+			<div id="subPageContent" class="programs">
+				<ul id="mobileMenu">
+					<li><a id="menu" style="cursor: pointer;">Menu</a></li>
+					<li class="mobileMenuItems"><a href="about.htm">About</a></li>
+					<!-- <li class="mobileMenuItems"><a href="sponsors.htm">Sponsors</a></li> -->
+					<li class="mobileMenuItems"><a href="press.htm">Press</a></li>
+					<li class="mobileMenuItems"><a href="contact.htm" style="color: #BBB0A6;">Contact</a><br /><br /></li>
+					
+					<li class="mobileMenuItems"><a href="nyc.htm">New York</a></li>
+					<li class="mobileMenuItems"><a href="paris.htm">Paris</a></li>
+				</ul>
+			
+				<div class="clearfix"></div>
+				
+				<div id="programList">
+				
+				<!--	<h1 class="quicksandBold" style="font-family:'QuicksandBold', Arial, sans-serif; width: 90%;">Contact</h1>
+					<p style="width: 90%;">Sara Harari</p> 	
+				-->	
+					
+					<h1 class="quicksandBold" style="font-family:'QuicksandBold', Arial, sans-serif; width: 90%;">Mailing Address</h1>
+					<p style="width: 90%;">Outsider Art Fair<br/>
+						134 Tenth Avenue<br/>
+						New York, NY 10011 
+					</p> 
+					 
+					<h1 class="quicksandBold" style="font-family:'QuicksandBold', Arial, sans-serif; width: 90%;">Email</h1>
+					<p style="width: 90%;"><a href="mailto:info@outsiderartfair.com" target="external" class="programListLinks">info@outsiderartfair.com</a>
+					</p> 
+				
+				</div>
+				
+				<br /><br /><br />
+				
+				
+			</div>
+		
+			<div class="clearfix"></div>
+			
+			
+		</div>
+		
+		
+	</div>
+
+     <!-- END content here -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/vendor/jquery.easing.min.js"></script>
+        
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>	
+        
+        <script src="js/vendor/jquery.cycle.all.js"></script> 
+	
+		<script type="text/javascript">
+		
+		// Page Specific Code	
+		
+			$(window).load(function(){				  
+				var menuState = "closed"
+			
+				$('#hideContent').show();			
+				
+				$('#subSlideShow').cycle({ 
+					fx:      'fade', 
+					speed:    1000, 
+					timeout:  6000 
+				});
+				
+				$("#menu").click(function() {
+					if (menuState == "closed") {
+						$(".mobileMenuItems").show();
+						menuState = "open"
+				  	} else {
+				  		$(".mobileMenuItems").hide();
+				  		menuState = "closed"
+				  	}
+				});
+				
+			});	
+					
+		</script>		
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    </body>
+</html>

@@ -1,0 +1,784 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1.1em; /* approx 18px; */
+    line-height: 1.37em; /* approx 22px; */
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+HTML { height: 100%; }
+
+.mainBody {
+	margin : 0;
+	padding : 0;
+	font-family: 'QuicksandBook', Arial, sans-serif; 	
+	font-weight: normal;
+	color : #000; 
+	background-color : #edcd00;
+	height: 100%;
+}
+
+#hideContent { display:none; width: 100%; height: 100%;}
+
+.preloader {
+   background:url('../img/preloader.gif') center center no-repeat #ffffff;
+   display:inline-block;
+}
+
+#homeLogoWrap { 
+	position: fixed; 
+	left: 0;
+	top: 3%;
+	width: 50%;
+	text-align: center;
+}
+
+#homeLogoWrap IMG { 
+	width: 50%;
+	max-width: 338px;
+}
+
+#homeRightWrap {
+	width: 50%;
+	height: 100%;
+	float: right;
+	position: relative;
+	background-color : #edcd00;
+	overflow:auto; 
+}
+
+#newHomeLogo {
+	color: #fff;
+	font-size: 2.2em;
+	text-align: left;
+	margin-left: 3%;
+}
+
+#homeRight {
+	width: 86%;
+	margin: 0 7% 0 7%;
+	height: 100%;
+	position: relative;
+}
+
+#homeRight IMG {
+	width: 75%;
+	position: absolute;
+	right: 10%; 
+	bottom: 13%;
+}
+
+#buyTix {
+	position: absolute;
+	right: 0;
+	top: 2.5%;
+	width: 25%;
+	max-width: 113px;
+}
+
+ul#homeNav {
+	padding: 0; 
+	margin-top: 5%;
+	float: left;
+	font-family:'QuicksandBook', Arial, sans-serif;
+}
+
+ul#homeNav li {
+	list-style:none;
+	color: #000;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+ul#homeNav li a { color: #000;}
+ul#homeNav li a:hover { color: #BBB0A6; }
+
+#homeRight H1 {
+	font-size: 2.25em;
+	line-height: 1em;
+	font-family:'QuicksandBook', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
+#homeRight P {
+	font-size: 1.2em;
+	line-height: 1em;
+	font-family:'QuicksandBook', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
+/* Sub Pages ========================  */
+
+
+#topBar {
+	position: fixed; 
+	height: 140px;
+	width: 100%;
+	z-index: 10;
+}
+
+#subSlideShow {  
+	position: fixed; 
+	top: 0;
+	left: 0;
+    width:  118px;  
+    height:   1600px;  
+    padding: 0;  
+    margin:  0;  
+    overflow: hidden;
+} 
+ 
+#subSlideShow img {    
+    width:  118px; 
+    height: 1600px; 
+    top:  0; 
+    left: 0; 
+} 
+
+
+#subContent {
+	margin-left: 118px;
+	width: auto;
+}
+
+#subNav {
+	width: 22%;
+	min-width: 200px;
+	max-width: 225px;
+	position: fixed;
+	left: 143px;
+	margin-top: 160px;
+}
+
+ul#subNavList {
+	padding: 0; 
+	font-family:'QuicksandBook', Arial, sans-serif;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+ul#subNavList li {
+	list-style:none;
+	color: #000;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+ul#subNavList li a { color: #000;}
+ul#subNavList li a:hover { color: #BBB0A6; }
+
+#subLogo {
+	position: absolute;
+	z-index: 10;
+	top: 13%;
+	left: 11px;
+}
+
+#subPageContent {
+	margin-left: 5%;
+	margin-right: 2%;
+	width: 58%;
+	max-width: 600px;
+	min-width: 400px;
+	position: absolute;
+	left: 35%;
+	margin-top: 160px;
+}
+
+#subPageContent H1 {
+	width: 80%;
+	font-size: 1.8em;
+	line-height: 1em;
+	font-family:'QuicksandBook', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+#subPageContent P {
+	width: 80%;
+	-webkit-margin-before: 0;
+}
+
+#buyTixSub {
+	position: absolute;
+	z-index: 10;
+	top: 13%;
+	right: 2.5%;
+}
+
+.aboutUs {
+	font-size: 1.6em;
+	line-height: 1em;
+	font-family:'QuicksandBook', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+
+ul#mobileMenu {
+	padding: 0; 
+	font-family:'QuicksandBook', Arial, sans-serif;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	margin-bottom: 1em;
+	display: none;
+}
+
+ul#mobileMenu li {
+	list-style:none;
+	color: #000;
+	font-size: .8em;
+	line-height: 1em;
+}
+
+ul#mobileMenu li a { color: #000;}
+ul#mobileMenu li a:hover { color: #BBB0A6; }
+
+.mobileMenuItems { display: none; }
+
+
+.exhibitors {
+	font-size: 2em;
+	line-height: 1em;
+	font-family:'QuicksandBook', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+#exhibitorListWrap { 
+	width: 60%; 
+	float: left;
+}
+
+ul#exhibitorList {
+	padding: 0; 
+	font-family:'QuicksandBook', Arial, sans-serif;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	margin-bottom: 4em;
+}
+
+ul#exhibitorList li {
+	list-style:none;
+	color: #000;
+	font-size: .5em;
+	line-height: 1.1em;
+	margin-bottom: .7em;
+}
+
+ul#exhibitorList li a { color: #000;}
+ul#exhibitorList li a:hover { color: #BBB0A6; }
+
+#exhibitorImages {
+	width: 35%;
+	float: right;
+	text-align: right;
+}
+
+#exhibitorImages IMG {
+	width: 100%;
+}
+
+.programs {
+	font-size: 1.6em;
+	line-height: 1em;
+	font-family:'QuicksandBook', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+#programList {width: 90%;}
+
+#programList H1, H2, P {
+	font-size: .7em;
+	line-height: 1.1em;
+	font-weight: normal;
+}
+
+
+#programList H1 {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	color: #BBB0A6;
+}
+
+#programList H2 {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+a.programListLinks { font-family:'QuicksandBook', Arial, sans-serif; color: #000; }
+a:hover.programListLinks { font-family:'QuicksandBook', Arial, sans-serif; color: #BBB0A6; }
+
+
+.sponsors {
+	font-size: 2.25em;
+	line-height: 1em;
+	font-family:'QuicksandBook', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+.sponsorLogo {width: 30%; float: left;}
+.sponsorLogo IMG {width: 90%;}
+
+.sponsorList {width: 70%; float: right;}
+
+.sponsorList H1, H2, P {
+	font-size: .7em;
+	line-height: 1.1em;
+	font-weight: normal;
+}
+
+.sponsorList H1 {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	color: #BBB0A6;
+}
+
+.sponsorList H2 {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+a.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #000; }
+a:hover.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #BBB0A6; }
+
+
+/* COLORS =============================================================================  */
+.000Black {color: #000;}
+.666Gray {color: #666;}
+.magColor { color: #BBB0A6; }
+
+
+/* LINKS =============================================================================  */
+
+a { 
+	color : #BBB0A6;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+a:visited { 
+
+}
+
+a:focus { 
+	outline : thin dotted; 
+	color : rgb(0,0,0); 
+}
+
+a:hover, a:active { 
+	outline : 0;
+	color : #000;
+}
+
+
+#controls a { 
+	color : #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#controls a:visited { 
+	color : #ccc; 
+}
+
+#controls a:focus { 
+	outline : thin dotted; 
+	color : rgb(0,0,0); 
+}
+
+#controls a:hover, footer a:active { 
+	outline : 0;
+	color : #ccc;
+}
+
+
+
+
+/*  FONTS  ============================================================================= */
+
+.quicksandLight {font-family:'QuicksandLight', Arial, sans-serif;}
+.quicksandLightOblique {font-family:'QuicksandLightOblique', Arial, sans-serif;}
+.quicksandBook {font-family:'QuicksandBook', Arial, sans-serif;}
+.quicksandBookOblique {font-family:'QuicksandBookOblique', Arial, sans-serif;}
+.quicksandBold {font-family:'QuicksandBold', Arial, sans-serif;}
+.quicksandDash {font-family:'QuicksandDash', Arial, sans-serif;}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 860px) {
+
+	#subNav {
+		display: none;
+	}
+	
+	
+	#subPageContent {
+		margin-left: 2%;
+		margin-right: 2%;
+		max-width: 96%;
+		min-width: 320px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		margin-top: 160px;
+	}	
+	
+	
+	#subSlideShow {
+		display: none;
+	}	
+	
+	#topBar {
+		background-color: #edcd00; 
+		position: fixed; 
+		height: 140px;
+		width: 100%;
+		z-index: 10;
+	}
+	
+	ul#mobileMenu {
+		display: block;
+	}	
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	.mainBody {
+		font : 90%/1.2 'QuicksandBook', Arial, sans-serif; 	
+	}
+	
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.mainBody {
+		font : 80%/1 'QuicksandBook', Arial, sans-serif; 	
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	.mainBody {
+		font : 60%/1 'QuicksandBook', Arial, sans-serif; 	
+	}
+
+	#topBar {
+		background-color: #edcd00; 
+		position: fixed; 
+		height: 90px;
+		width: 100%;
+		z-index: 10;
+	}
+	
+	#subPageContent {
+		margin-top: 110px;
+	}	
+
+	#buyTixSub {
+		height: 75%;
+	}
+
+	#subLogo {
+		height: 75%;
+	}
+
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
