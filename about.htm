@@ -25,7 +25,11 @@
 		<!-- StyleSheets -->
         <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/main.css">     
+        <link rel="stylesheet" href="css/main.css"> 
+        
+        <!-- Supersized CSS -->
+        <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />        
               
         <!-- Modernizr -->
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
@@ -39,63 +43,61 @@
 
     <!-- BEGIN content here -->      	
     <div id="hideContent">
+    
+    <!-- 
+		<div id="homeLogoWrap">    
+			  
+    		<img id="homeLogo" src="img/home_logo.png" alt="Outsider Art Fair" />
+    		
+    		<div id="newHomeLogo">
+	    		
+	    	</div>	
+		</div>		
+		<div id="slidecaption" class="load-item"></div>		
+	-->			
+		<div id="homeRightWrap">
+			<div id="aboutRight">
+				<ul id="homeNav">
+					<li><a href="about.htm" style="color: #888;">About</a></li>
+					<!-- <li><a href="sponsors.htm">Sponsors</a></li> -->
+					<li><a href="press.htm">Press</a><br /><br /></li>
+					<!-- <li><a href="contact.htm">Contact</a><br /><br /></li> -->
+					<li><a href="nyc.htm">New York</a></li>
+					<li><a href="paris.htm">Paris</a></li>
+				</ul>			
 		
-		<div id="topBar">
-			<a href="index.htm"><img id="subLogo" src="img/sub_logo.png" alt="Outsider Art Fair" /></a>
-			
-				<img id="buyTixSub" usemap="#buyTixMap" src="img/buy_tix.png" alt="Buy Tickets Now" />
+				<img id="buyTix" usemap="#buyTixMap" src="img/buy_tix.png" alt="Buy Tickets Now" />
 				
 <map name="buyTixMap">
 	<area shape="rect" coords="0,0,52,107" href="https://www.eventbrite.com/event/7931203443" alt="Buy Now in US Dollars" title="Buy Now in US Dollars" target="external" />
 	<area shape="rect" coords="52,0,107,107" href="https://www.eventbrite.com/event/7872580099" alt="Buy Now in Euros" title="Buy Now in Euros" target="external" />
-</map>				 
-		 
-		</div>
-		
-		<div id="subSlideShow">
-			<img src="img/TEMP_sub1.jpg" alt="GALLERY NAME" /> 
-    		<img src="img/TEMP_sub2.jpg" alt="GALLERY NAME" /> 
-    		<img src="img/TEMP_sub3.jpg" alt="GALLERY NAME" /> 
-		</div>
-		
-		<div id="subContent">
-			<div id="subNav">
-				<ul id="subNavList">
-					<li><a href="about.htm" style="color: #BBB0A6;">About</a></li>
-					<!-- <li><a href="sponsors.htm">Sponsors</a></li> -->
-					<li><a href="press.htm">Press</a></li>
-					<li><a href="contact.htm">Contact</a><br /><br /></li>
-					<li><a href="nyc.htm">New York</a></li>
-					<li><a href="paris.htm">Paris</a></li>	
-				</ul>
-			</div>
-		
-			<div id="subPageContent" class="aboutUs">
-				<ul id="mobileMenu">
-					<li><a id="menu" style="cursor: pointer;">Menu</a></li>
-					<li class="mobileMenuItems"><a href="about.htm" style="color: #BBB0A6;">About</a></li>
-					<!-- <li class="mobileMenuItems"><a href="sponsors.htm">Sponsors</a></li> -->
-					<li class="mobileMenuItems"><a href="press.htm">Press</a></li>
-					<li class="mobileMenuItems"><a href="contact.htm">Contact</a><br /><br /></li>
-					
-					<li class="mobileMenuItems"><a href="nyc.htm">New York</a></li>
-					<li class="mobileMenuItems"><a href="paris.htm">Paris</a></li>
-				</ul>
+</map>				
 			
-				<p>Founded by Sandy Smith in 1993, the Outsider Art Fair soon became a critical and commercial success. Recognized for its maverick spirit, the fair played a vital role in building a passionate collecting community as crowds flocked annually to New York's Puck Building, the event's original site during its first 15 years.</p>
+				<div class="clearfix"></div>
+				
+				<br />
+				
+ 				<p>Founded by Sandy Smith in 1993, the Outsider Art Fair soon became a critical and commercial success. Recognized for its maverick spirit, the fair played a vital role in building a passionate collecting community as crowds flocked annually to New York's Puck Building, the event's original site during its first 15 years.</p>
 				
 				<p>In 2012, OAF was acquired by Wide Open Arts, a new company formed by art dealer Andrew Edlin. Its debut edition in 2013 saw the fair relocated to Center 548 in Chelsea and included guest curatorial projects and the OAF Talks program. OAF continues its tradition of presenting top dealers with prime examples of works by both legendary and newly discovered artists. The 2013 fair enjoyed rave reviews and more than tripled previous attendance levels.</p>
 				
 				<p>In the wake of its success in New York, Wide Open Arts is pleased to announce its inaugural iteration in Paris. OAF Paris will take place at Hotel Le A from October 24-27, 2013.</p>
+ 
+ 				<p class="quicksandBold"><span  style="font-family:'QuicksandBold', Arial, sans-serif; width: 90%;">Mailing Address:</span><br />
+ 					Outsider Art Fair<br/>
+					134 Tenth Avenue<br/>
+					New York, NY 10011
+				</p> 
 				
+				<p style="width: 90%;"><span  style="font-family:'QuicksandBold', Arial, sans-serif;">Email:</span> <a href="mailto:info@outsiderartfair.com" target="external" class="aboutLinks">info@outsiderartfair.com</a><br/>
+				<span  style="font-family:'QuicksandBold', Arial, sans-serif;">Phone:</span> 212-337-3338
+				</p> 
+				
+				<div class="clearfix" style="height: 30px"></div>
 			</div>
-		
-			<div class="clearfix"></div>
-			
-			
 		</div>
 		
-		
+		<div class="clearfix"></div>
 	</div>
 
      <!-- END content here -->
@@ -107,34 +109,41 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>	
         
-        <script src="js/vendor/jquery.cycle.all.js"></script> 
+		<script type="text/javascript" src="js/vendor/supersized.3.2.7.custom.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>	
 	
 		<script type="text/javascript">
 		
 		// Page Specific Code	
-		
 			$(window).load(function(){				  
-				var menuState = "closed"
 			
-				$('#hideContent').show();			
+				$('#hideContent').show();					
 				
-				$('#subSlideShow').cycle({ 
-					fx:      'fade', 
-					speed:    1000, 
-					timeout:  6000 
+			});					
+			
+			jQuery(function($){
+				
+				$.supersized({
+					autoplay				:	1,
+					random					:	1,
+					// Functionality
+					slide_interval          :   6000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1000,		// Speed of transition	
+					keyboard_nav			:	0,
+					thumb_links				: 	0,
+					thumbnail_navigation	:	0,
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'img/about_1.jpg', title : '<p>Andrew Edlin Gallery</p>'},
+														{image : 'img/about_2.jpg', title : '<p>Calvin Morris Gallery</p>'},  
+														{image : 'img/about_3.jpg', title : '<p>Henry Boxer Gallery</p>'}
+												]
+					
 				});
-				
-				$("#menu").click(function() {
-					if (menuState == "closed") {
-						$(".mobileMenuItems").show();
-						menuState = "open"
-				  	} else {
-				  		$(".mobileMenuItems").hide();
-				  		menuState = "closed"
-				  	}
-				});
-				
-			});							
+			});				
 			
 		</script>		
 

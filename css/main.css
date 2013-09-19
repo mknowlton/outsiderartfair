@@ -149,8 +149,8 @@ HTML { height: 100%; }
 	position: relative;
 }
 
-#homeRight IMG {
-	width: 75%;
+#homeImage {
+	width: 60%;
 	position: absolute;
 	right: 10%; 
 	bottom: 13%;
@@ -162,6 +162,7 @@ HTML { height: 100%; }
 	top: 2.5%;
 	width: 25%;
 	max-width: 113px;
+	z-index: 100;
 }
 
 ul#homeNav {
@@ -179,7 +180,7 @@ ul#homeNav li {
 }
 
 ul#homeNav li a { color: #000;}
-ul#homeNav li a:hover { color: #BBB0A6; }
+ul#homeNav li a:hover { color: #888; }
 
 #homeRight H1 {
 	font-size: 2.25em;
@@ -191,6 +192,21 @@ ul#homeNav li a:hover { color: #BBB0A6; }
 
 #homeRight P {
 	font-size: 1.2em;
+	line-height: 1em;
+	font-family:'QuicksandBook', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
+#aboutRight {
+	width: 86%;
+	margin: 0 7% 0 7%;
+	height: 100%;
+	position: relative;
+}
+
+#aboutRight P {
+	font-size: 1.1em;
 	line-height: 1em;
 	font-family:'QuicksandBook', Arial, sans-serif;
 	font-weight: normal;
@@ -255,13 +271,25 @@ ul#subNavList li {
 }
 
 ul#subNavList li a { color: #000;}
-ul#subNavList li a:hover { color: #BBB0A6; }
+ul#subNavList li a:hover { color: #888; }
 
 #subLogo {
 	position: absolute;
 	z-index: 10;
 	top: 13%;
 	left: 11px;
+}
+
+#aboutLogo {
+	position: absolute;
+	top: 2.5%;
+	width: 99.4%;
+	text-align: center;
+	z-index: 9;
+}
+
+P#2013Head {
+	font-size: 1em;
 }
 
 #subPageContent {
@@ -272,7 +300,8 @@ ul#subNavList li a:hover { color: #BBB0A6; }
 	min-width: 400px;
 	position: absolute;
 	left: 35%;
-	margin-top: 160px;
+	margin-top: 100px;
+	z-index: 10000;
 }
 
 #subPageContent H1 {
@@ -293,7 +322,7 @@ ul#subNavList li a:hover { color: #BBB0A6; }
 
 #buyTixSub {
 	position: absolute;
-	z-index: 10;
+	z-index: 100;
 	top: 13%;
 	right: 2.5%;
 }
@@ -326,7 +355,7 @@ ul#mobileMenu li {
 }
 
 ul#mobileMenu li a { color: #000;}
-ul#mobileMenu li a:hover { color: #BBB0A6; }
+ul#mobileMenu li a:hover { color: #888; }
 
 .mobileMenuItems { display: none; }
 
@@ -363,7 +392,7 @@ ul#exhibitorList li {
 }
 
 ul#exhibitorList li a { color: #000;}
-ul#exhibitorList li a:hover { color: #BBB0A6; }
+ul#exhibitorList li a:hover { color: #888; }
 
 #exhibitorImages {
 	width: 35%;
@@ -385,11 +414,11 @@ ul#exhibitorList li a:hover { color: #BBB0A6; }
 	-webkit-margin-after: 0;
 }
 
-#programList {width: 90%;}
+#programList {width: 100%;}
 
 #programList H1, H2, P {
-	font-size: .7em;
-	line-height: 1.1em;
+	font-size: .5em;
+	line-height: 1em;
 	font-weight: normal;
 }
 
@@ -397,7 +426,7 @@ ul#exhibitorList li a:hover { color: #BBB0A6; }
 #programList H1 {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
-	color: #BBB0A6;
+	color: #888;
 }
 
 #programList H2 {
@@ -405,9 +434,11 @@ ul#exhibitorList li a:hover { color: #BBB0A6; }
 	-webkit-margin-after: 0;
 }
 
-a.programListLinks { font-family:'QuicksandBook', Arial, sans-serif; color: #000; }
-a:hover.programListLinks { font-family:'QuicksandBook', Arial, sans-serif; color: #BBB0A6; }
+a.programListLinks { font-family:'QuicksandBook', Arial, sans-serif; color: #000; font-size: .7em; }
+a:hover.programListLinks { font-family:'QuicksandBook', Arial, sans-serif; color: #888; }
 
+a.aboutLinks { font-family:'QuicksandBook', Arial, sans-serif; color: #000; }
+a:hover.aboutLinks { font-family:'QuicksandBook', Arial, sans-serif; color: #888; }
 
 .sponsors {
 	font-size: 2.25em;
@@ -428,12 +459,14 @@ a:hover.programListLinks { font-family:'QuicksandBook', Arial, sans-serif; color
 	font-size: .7em;
 	line-height: 1.1em;
 	font-weight: normal;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
 }
 
 .sponsorList H1 {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
-	color: #BBB0A6;
+	color: #888;
 }
 
 .sponsorList H2 {
@@ -442,19 +475,19 @@ a:hover.programListLinks { font-family:'QuicksandBook', Arial, sans-serif; color
 }
 
 a.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #000; }
-a:hover.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #BBB0A6; }
+a:hover.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #888; }
 
 
 /* COLORS =============================================================================  */
 .000Black {color: #000;}
 .666Gray {color: #666;}
-.magColor { color: #BBB0A6; }
+.magColor { color: #888; }
 
 
 /* LINKS =============================================================================  */
 
 a { 
-	color : #BBB0A6;
+	color : #888;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
