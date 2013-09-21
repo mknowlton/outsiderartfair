@@ -152,8 +152,8 @@ HTML { height: 100%; }
 #homeImage {
 	width: 60%;
 	position: absolute;
-	right: 10%; 
-	bottom: 13%;
+	right: 20%; 
+	bottom: 20%;
 }
 
 #buyTix {
@@ -293,7 +293,7 @@ P#2013Head {
 }
 
 #subPageContent {
-	margin-left: 5%;
+/* margin-left: 5%; */	
 	margin-right: 2%;
 	width: 58%;
 	max-width: 600px;
