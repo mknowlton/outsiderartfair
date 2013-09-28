@@ -108,6 +108,8 @@ HTML { height: 100%; }
 
 #hideContent { display:none; width: 100%; height: 100%;}
 
+EM {font-family:'QuicksandBookOblique', Arial, sans-serif;}
+
 .preloader {
    background:url('../img/preloader.gif') center center no-repeat #ffffff;
    display:inline-block;
