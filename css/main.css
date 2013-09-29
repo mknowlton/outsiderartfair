@@ -485,6 +485,16 @@ a.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #000
 a:hover.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #888; }
 
 
+#english, #french { cursor: pointer; } 
+
+a.languageSwitcherOn{color: #000;} 
+a:hover.languageSwitcherOn {color: #000;}
+
+a.languageSwitcherOff {color: #888;} 
+a:hover.languageSwitcherOff {color: #000;}
+
+#inFrench {display: none;}
+
 /* COLORS =============================================================================  */
 .000Black {color: #000;}
 .666Gray {color: #666;}
