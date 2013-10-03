@@ -485,7 +485,21 @@ a.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #000
 a:hover.sponsorListLinks { font-family:'QuicksandDash', Arial, sans-serif; color: #888; }
 
 
-#english, #french { cursor: pointer; } 
+#english { 
+	background-image:url('../img/eng.gif');
+	background-repeat:no-repeat;
+	background-position:right center; 
+	cursor: pointer; 
+	padding-right: 17px; 
+}
+
+#french { 
+	background-image:url('../img/fre.gif');
+	background-repeat:no-repeat;
+	background-position:right center; 
+	cursor: pointer; 
+	padding-right: 17px; 
+}
 
 a.languageSwitcherOn{color: #000;} 
 a:hover.languageSwitcherOn {color: #000;}
