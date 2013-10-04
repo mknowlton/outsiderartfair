@@ -197,7 +197,18 @@
 		// Page Specific Code	
 		
 			$(window).load(function(){		
-				var menuState = "closed"
+				var menuState = "closed";
+				var hash = window.location.hash;
+				
+				if ( hash == "#french" )
+					{
+						$("#french").removeClass("languageSwitcherOff");
+						$("#french").addClass("languageSwitcherOn");
+						$("#english").removeClass("languageSwitcherOn");
+						$("#english").addClass("languageSwitcherOff");
+						$("#inEnglish").hide();
+						$("#inFrench").show();					
+					}				
 			
 				$('#hideContent').show();			
 				
